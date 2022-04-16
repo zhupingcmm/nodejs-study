@@ -29,7 +29,6 @@ const handleBlogRouter = (req, res) => {
 
   if (method === "DELETE" && path === "/api/blog") {
     const id = req.query.id;
-    console.log("id is ", id);
     const result = deleteBlog(id);
     if (result) {
       return new SuccessModel();
